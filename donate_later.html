@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeShare - Donate Later</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="donate_later.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav>
+        <div class="logo">LifeShare</div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-links" style="text-align: center">
+          <li><a href="index.php">Home</a></li>
+          <li><a href="find_donors.php">Find Donors</a></li>
+          <li>
+            <a href="AI.html"><i class="fas fa-robot"></i> Ask AI</a>
+          </li>
+          <li><a href="donation_centres.html">Donation Centres</a></li>
+          <li class="has-submenu">
+            <a href="#service">Services <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="donate_now.html">Donate Now</a></li>
+              <li><a href="donate_later.html">Donate Later</a></li>
+              <li><a href="request.html">Request Blood</a></li>
+              <li><a href="available.php">Available Blood</a></li>
+              <li>
+                <a href="compatibility.php" class="active">Compatibility</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="index.php #contact">Contact</a></li>
+          <li><a href="emergency.php" class="emergency-btn">Emergency</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Animated background elements -->
+    <div
+      class="blood-drop"
+      style="width: 30px; height: 45px; top: 10%; left: 5%; animation-delay: 0s"
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 20px;
+        height: 30px;
+        top: 20%;
+        left: 15%;
+        animation-delay: 2s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="width: 40px; height: 60px; top: 5%; left: 25%; animation-delay: 4s"
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 25px;
+        height: 38px;
+        top: 15%;
+        left: 35%;
+        animation-delay: 6s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="width: 35px; height: 52px; top: 8%; left: 45%; animation-delay: 8s"
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 15px;
+        height: 22px;
+        top: 25%;
+        left: 55%;
+        animation-delay: 10s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 28px;
+        height: 42px;
+        top: 12%;
+        left: 65%;
+        animation-delay: 12s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 22px;
+        height: 33px;
+        top: 18%;
+        left: 75%;
+        animation-delay: 14s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 32px;
+        height: 48px;
+        top: 7%;
+        left: 85%;
+        animation-delay: 16s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 18px;
+        height: 27px;
+        top: 22%;
+        left: 95%;
+        animation-delay: 18s;
+      "
+    ></div>
+
+    <!-- Right side blood drops -->
+    <div
+      class="blood-drop"
+      style="width: 22px; height: 33px; top: 5%; right: 5%; animation-delay: 1s"
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 18px;
+        height: 27px;
+        top: 15%;
+        right: 15%;
+        animation-delay: 3s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 30px;
+        height: 45px;
+        top: 8%;
+        right: 25%;
+        animation-delay: 5s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 25px;
+        height: 38px;
+        top: 20%;
+        right: 35%;
+        animation-delay: 7s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 15px;
+        height: 22px;
+        top: 12%;
+        right: 45%;
+        animation-delay: 9s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 35px;
+        height: 52px;
+        top: 25%;
+        right: 55%;
+        animation-delay: 11s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 20px;
+        height: 30px;
+        top: 18%;
+        right: 65%;
+        animation-delay: 13s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 28px;
+        height: 42px;
+        top: 10%;
+        right: 75%;
+        animation-delay: 15s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 32px;
+        height: 48px;
+        top: 22%;
+        right: 85%;
+        animation-delay: 17s;
+      "
+    ></div>
+    <div
+      class="blood-drop"
+      style="
+        width: 40px;
+        height: 60px;
+        top: 15%;
+        right: 95%;
+        animation-delay: 19s;
+      "
+    ></div>
+
+    <!-- Blood cells for additional animation -->
+    <div
+      class="blood-cell"
+      style="
+        width: 60px;
+        height: 60px;
+        top: 30%;
+        left: 10%;
+        animation-delay: 0s;
+      "
+    ></div>
+    <div
+      class="blood-cell"
+      style="
+        width: 40px;
+        height: 40px;
+        top: 60%;
+        left: 20%;
+        animation-delay: 2s;
+      "
+    ></div>
+    <div
+      class="blood-cell"
+      style="
+        width: 70px;
+        height: 70px;
+        top: 40%;
+        right: 15%;
+        animation-delay: 4s;
+      "
+    ></div>
+    <div
+      class="blood-cell"
+      style="
+        width: 50px;
+        height: 50px;
+        top: 70%;
+        right: 25%;
+        animation-delay: 6s;
+      "
+    ></div>
+
+    <div class="container">
+      <div class="header">
+        <h1>LifeShare</h1>
+        <p>Your Drop. Their Hope. Our Future</p>
+      </div>
+
+      <div class="form-container">
+        <h2 class="section-title">Join Our Donor Registry</h2>
+        <p class="form-subtitle">
+          We'll contact you when blood is urgently needed
+        </p>
+
+        <form
+          id="donation-form"
+          action="submit_donate_later.php"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <!-- Personal Information -->
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="fullname">Full Name *</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                class="form-control"
+                placeholder="Enter your full name"
+                required
+              />
+              <div class="error-message" id="fullname-error">
+                Please enter your full name
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Enter your email address"
+                required
+              />
+              <div class="error-message" id="email-error">
+                Please enter a valid email address
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-control"
+                placeholder="Enter your phone number"
+                required
+              />
+              <div class="error-message" id="phone-error">
+                Please enter a valid phone number
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="gender">Gender *</label>
+              <select id="gender" name="gender" class="form-control" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="error-message" id="gender-error">
+                Please select your gender
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age *</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                class="form-control"
+                placeholder="Enter your age"
+                min="18"
+                max="65"
+                required
+              />
+              <div class="error-message" id="age-error">
+                Please enter a valid age (18-65)
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="blood-group">Blood Group *</label>
+              <select
+                id="blood-group"
+                name="blood-group"
+                class="form-control"
+                required
+              >
+                <option value="">Select your blood group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+              <div class="error-message" id="blood-group-error">
+                Please select your blood group
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="blood-proof">Upload Blood Group Proof (PDF) *</label>
+            <input
+              type="file"
+              id="blood-proof"
+              name="blood-proof"
+              accept="application/pdf"
+              required
+            />
+          </div>
+
+          <!-- Previous Donation Information -->
+          <div class="previous-donation-group">
+            <label class="previous-donation-label" style="color: #8a0303"
+              >Have you donated blood before? *</label
+            >
+            <div class="radio-group">
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="donated-yes"
+                  name="previous-donation"
+                  value="yes"
+                  onchange="toggleLastDonationField(true)"
+                  required
+                />
+                <label for="donated-yes">Yes</label>
+              </div>
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="donated-no"
+                  name="previous-donation"
+                  value="no"
+                  onchange="toggleLastDonationField(false)"
+                  required
+                />
+                <label for="donated-no">No</label>
+              </div>
+            </div>
+            <div class="error-message" id="previous-donation-error">
+              Please select an option
+            </div>
+          </div>
+
+          <div class="last-donation-field" id="last-donation-field">
+            <div class="form-group">
+              <label for="last-donation">Last Donation Date</label>
+              <input
+                type="date"
+                id="last-donation"
+                name="last-donation"
+                class="form-control"
+              />
+              <div class="error-message" id="last-donation-error">
+                Please select a valid date
+              </div>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="form-group">
+            <label for="area">Area (Only Available In Mumbai) *</label>
+            <select
+              id="area"
+              name="address"
+              class="form-control"
+              onchange="updateHospitals()"
+              required
+            >
+              <option value="">Select Area</option>
+              <option value="Andheri">Andheri</option>
+              <option value="Bandra">Bandra</option>
+              <option value="Dadar">Dadar</option>
+              <option value="Borivali">Borivali</option>
+              <option value="Thane">Thane</option>
+              <option value="Ghatkopar">Ghatkopar</option>
+              <option value="Malad">Malad</option>
+              <option value="Colaba">Colaba</option>
+            </select>
+            <div class="error-message" id="area-error">
+              Please select an area
+            </div>
+          </div>
+
+          <!-- Hidden field for donation type -->
+          <input type="hidden" name="donation-type" value="later" />
+
+          <!-- Terms and Submit -->
+          <div class="form-group">
+            <div class="terms">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms"
+                >I agree to be contacted when blood is needed and to the terms
+                and conditions *</label
+              >
+            </div>
+            <div class="error-message" id="terms-error">
+              You must agree to the terms and conditions
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">Join Donor Registry</button>
+        </form>
+      </div>
+    </div>
+    <script src="donate_later.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeShare AI Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="AI.css">
+    
+    
+</head>
+<body>
+    <script type="text/javascript" src="AI.js"></script>
+    
+
+    <div class="container">
+        <header>
+            <h1>LifeShare AI Assistant</h1>
+            <p>Ask me anything about blood donation or our website!</p>
+        </header>
+        
+        <div class="chat-container">
+            <div class="sidebar">
+                <div class="bot-info">
+                    <a href="index.php">
+                    <div class="bot-avatar">
+                        <i class="fas fa-tint"></i>
+                        
+                    </div>
+                    </a>
+                    <h2>LifeShare AI Assistant</h2>
+                    <p>Here to help you save lives</p>
+                </div>
+                
+                <div class="quick-actions">
+                    <h3 >Quick Actions</h3>
+                    <div class="action-buttons">
+                        <a href="available.php">
+                        <label for="availableDonorBtn">
+                        <button class="action-btn" id="availableDonorBtn">
+                           <i class="fas fa-user-friends"></i> Available Donor
+                        </button>
+                        </label>
+                        </a>
+                        <a href="index.php">
+                        <button class="action-btn" id="eligibilityBtn">
+                            <i class="fa-solid fa-house-user" style="color: #ffffff;"></i> Home Page
+                        </button>
+                        </a>
+                        <a href="donate_now.html">
+                        <label for="donateBtn">
+                        <button class="action-btn" id="donateBtn">
+                           <i class="fas fa-hand-holding-heart"></i> Donate
+                            
+                        </button>
+                        </label>
+                        </a>
+                        
+                        <a href="emergency.php" id="emergencyBtn">
+                        <label for="emergencyBtn">
+                            <button class="action-btn" id="emergencyBtn">
+                                    <i class="fas fa-ambulance"></i> Emergency
+                                </button>
+                            </label>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="suggested-questions">
+                    <h3>
+                        <span>Suggested Questions</span>
+                    </h3>
+                    
+                    <div class="suggestion-nav">
+                        <button class="nav-btn" id="homeBtn" title="Main topics">
+                            <i class="fas fa-home"></i>
+                        </button>
+                        <button class="nav-btn" id="backBtn" disabled title="Back">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <button class="nav-btn" id="moreBtn" title="More suggestions">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="questions-container" id="suggestedQuestions">
+                        <!-- Questions will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-chat">
+                <div class="chat-header">
+                    <span><i class="fas fa-comments"></i> Chat with Assistant</span>
+                    <button class="toggle-suggestions" id="toggleSuggestions">
+                        <i class="fas fa-lightbulb"></i> Suggestions: ON
+                    </button>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div>Hello! I'm the LifeShare AI assistant. I can help you with questions about blood donation, our website features, and how you can help save lives. What would you like to know?</div>
+                        <div class="message-time">Just now</div>
+                    </div>
+                </div>
+                
+                <div class="typing-indicator" id="typingIndicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <div class="chat-input-container">
+                    <input type="text" class="chat-input" id="userInput" placeholder="Type your question here...">
+                    <button class="send-button" id="sendButton">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
